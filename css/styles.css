@@ -360,6 +360,72 @@ img {
     color: var(--color-principal);
 }
 
+.franja-taller {
+    background: var(--color-principal);
+    padding: 25px 0;
+    position: relative;
+}
+
+.franja-taller-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.franja-taller-texto {
+    flex: 1;
+}
+
+.franja-etiqueta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-secundario);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.franja-etiqueta i {
+    font-size: 7px;
+}
+
+.franja-taller h2 {
+    color: var(--blanco);
+    font-size: 23px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+
+.franja-taller p {
+    color: rgba(255,255,255,.8);
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.btn-franja-taller {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 13px 22px;
+    background: var(--color-secundario);
+    color: var(--color-oscuro);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: var(--transicion);
+}
+
+.btn-franja-taller:hover {
+    background: var(--blanco);
+    color: var(--color-principal);
+}
+
 .seccion {
     padding: 110px 0;
 }
@@ -864,6 +930,17 @@ h2 {
     }
     .linea {
         margin: 15px 0 20px;
+    }
+    .franja-taller-contenido {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+    .franja-taller h2 {
+        font-size: 19px;
+    }
+    .btn-franja-taller {
+        width: 100%;
     }
     .nosotros .row {
         row-gap: 35px;
