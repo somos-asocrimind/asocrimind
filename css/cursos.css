@@ -1,6 +1,7 @@
 :root {
     --color-principal: #1d3b36;
     --color-secundario: #b49a63;
+    --color-imagen: #590421;
     --color-claro: #f5f4f0;
     --color-oscuro: #17201e;
     --color-texto: #4b5552;
@@ -420,10 +421,6 @@ img {
     color: var(--blanco);
 }
 
-/* =========================================
-   OFERTA ACADÉMICA
-========================================= */
-
 .informacion-cursos {
     padding: 110px 0;
     background: var(--color-claro);
@@ -454,11 +451,6 @@ img {
     font-size: 13px;
     line-height: 1.8;
 }
-
-
-/* =========================================
-   LISTA DE CURSOS
-========================================= */
 
 .curso-lista {
     display: grid;
@@ -549,10 +541,6 @@ img {
 .btn-ver-curso:hover i {
     transform: translateX(5px);
 }
-
-/* =========================================
-   MODAL DEL CURSO
-========================================= */
 
 .modal-curso {
     border: none;
@@ -789,6 +777,185 @@ img {
 .curso-acciones button a {
     color: var(--blanco);
     text-decoration: none;
+}
+
+.seccion-conferencias {
+    padding: 75px 0;
+    background: var(--blanco);
+}
+
+.conferencia-destacada {
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr;
+    min-height: 300px;
+    background: var(--color-claro);
+    overflow: hidden;
+}
+
+.conferencia-contenido {
+    padding: 45px;
+}
+
+.estado-evento {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--color-secundario);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+}
+
+.estado-evento i {
+    font-size: 7px;
+}
+
+.tipo-evento {
+    color: var(--color-secundario);
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-top: 25px;
+}
+
+.conferencia-contenido h3 {
+    font-size: 27px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.conferencia-contenido > p {
+    font-size: 13px;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.conferencia-datos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.conferencia-datos div,
+.evento-datos div {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 12px;
+}
+
+.conferencia-datos i {
+    color: var(--color-secundario);
+}
+
+.conferencia-decoracion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: var(--color-imagen);
+    color: var(--color-principal);
+}
+
+.conferencia-decoracion i {
+    font-size: 75px;
+}
+
+.conferencia-decoracion span {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.seccion-eventos {
+    padding: 75px 0;
+    background: var(--color-claro);
+}
+
+.evento-destacado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    overflow: hidden;
+}
+
+.evento-imagen {
+    min-height: 350px;
+    background: #e8e6df;
+}
+
+.evento-imagen img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    display: block;
+    object-fit: cover;
+}
+
+.evento-contenido {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.etiqueta-evento {
+    color: var(--color-secundario);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.evento-contenido h2 {
+    color: var(--color-principal);
+    font-size: 29px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.evento-contenido > p {
+    color: var(--color-texto);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.evento-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin: 20px 0 25px;
+}
+
+.evento-datos div {
+    color: var(--color-texto);
+}
+
+.evento-datos i {
+    color: var(--color-secundario);
+}
+
+.btn-evento {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 13px 22px;
+    background: var(--color-principal);
+    color: var(--blanco);
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transicion);
+}
+
+.btn-evento:hover {
+    background: var(--color-secundario);
+    color: var(--color-oscuro);
 }
 
 .btn-arriba {
@@ -1033,6 +1200,36 @@ img {
     .actividad-contenido {
         padding: 30px 25px;
     }
+
+    .conferencia-destacada {
+        grid-template-columns: 1fr;
+    }
+
+    .conferencia-contenido {
+        padding: 30px 25px;
+    }
+
+    .conferencia-decoracion {
+        min-height: 150px;
+    }
+
+    .conferencia-decoracion i {
+        font-size: 45px;
+    }
+
+    .evento-destacado {
+        grid-template-columns: 1fr;
+    }
+
+    .evento-imagen,
+    .evento-imagen img {
+        min-height: 250px;
+        max-height: 300px;
+    }
+
+    .evento-contenido {
+        padding: 30px 25px;
+    }
 }
 
 
@@ -1067,5 +1264,19 @@ img {
 
     .curso-descripcion {
         font-size: 13px;
+    }
+    
+    .conferencia-contenido h3,
+    .evento-contenido h2 {
+        font-size: 23px;
+    }
+
+    .conferencia-datos {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-evento {
+        width: 100%;
     }
 }
