@@ -726,6 +726,104 @@ img {
     margin: 22px 0;
 }
 
+.calendario-pagos {
+    margin: 28px 0;
+    padding: 22px;
+    background: var(--color-claro);
+    border: 1px solid var(--borde);
+}
+
+.pagos-encabezado {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.pagos-encabezado > i {
+    color: var(--color-secundario);
+    font-size: 23px;
+}
+
+.pagos-encabezado span {
+    color: var(--color-secundario);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.pagos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.pago-item {
+    padding: 18px;
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+}
+
+.pago-icono {
+    color: var(--color-secundario);
+    font-size: 20px;
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.pago-icono h4 {
+    color: var(--color-principal);
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+.pago-fecha {
+    display: block;
+    color: var(--color-principal);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.pago-item p {
+    color: var(--color-texto);
+    font-size: 11px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.pago-total {
+    background: var(--color-principal);
+    border-color: var(--color-principal);
+}
+
+.pago-total .pago-etiqueta,
+.pago-total h4,
+.pago-total .pago-fecha,
+.pago-total p {
+    color: var(--blanco);
+}
+
+.pago-total .pago-icono {
+    color: var(--color-secundario);
+}
+
+.nota-pagos {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    color: var(--color-texto);
+    font-size: 10px;
+    line-height: 1.6;
+    margin: 18px 0 0;
+}
+
+.nota-pagos i {
+    color: var(--color-secundario);
+    margin-top: 2px;
+}
+
 .destacado-item {
     display: flex;
     align-items: flex-start;
@@ -1278,5 +1376,15 @@ img {
 
     .btn-evento {
         width: 100%;
+    }
+    .calendario-pagos {
+        padding: 16px;
+    }
+
+    .pagos-grid {
+        grid-template-columns: 1fr;
+    }
+    .pago-item {
+        padding: 16px;
     }
 }
