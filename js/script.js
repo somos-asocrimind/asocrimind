@@ -235,3 +235,25 @@ document.addEventListener("keydown", (e) => {
         modalProceso.classList.remove("activo");
     }
 });
+
+
+
+
+
+async function copiarCLABE() {
+    const clabe = document.getElementById("clabeCuenta").textContent.trim();
+    const boton = document.querySelector(".btn-copiar");
+
+    try {
+        await navigator.clipboard.writeText(clabe);
+
+        boton.innerHTML = '<i class="fas fa-check"></i> Copiada';
+
+        setTimeout(() => {
+            boton.innerHTML = '<i class="fas fa-copy"></i> Copiar';
+        }, 2000);
+
+    } catch (error) {
+        alert("No se pudo copiar automáticamente. Copia la CLABE manualmente.");
+    }
+}
