@@ -293,9 +293,9 @@
                                 <a href="https://forms.gle/JBfpu8GN7vLi186s5" target="_blank">Solicitar información</a>
                                 <i class="fas fa-arrow-right"></i>
                             </button>
-                            <button class="btn-principal" type="button">
-                                <a href="./documentos/TSU.pdf" target="_blank">Ver más información</a>
-                                <i class="fas fa-external-link-alt"></i>
+                            <button class="btn-principal" type="button" data-bs-toggle="modal" data-bs-target="#modalPresentacionCurso">
+                                <i class="fas fa-book-open"></i>
+                                Conoce el curso
                             </button>
                         </div>
                     </div>
@@ -571,6 +571,132 @@
                 <div class="modal-footer">
                     <button type="button" class="btn-cerrar-modal" data-bs-dismiss="modal">
                         Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPresentacionCurso" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modal-presentacion">
+                <div class="modal-header encabezado-presentacion">
+                    <div>
+                        <span>TÉCNICO SUPERIOR</span>
+                        <h5>Inspector de siniestros e investigación antifraudes</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div id="carruselCursoInfo" class="carousel slide" data-bs-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="slide-curso slide-portada">
+                                <span class="slide-etiqueta">TÉCNICO SUPERIOR</span>
+                                <h2>El fraude ha evolucionado. Los especialistas, también deben hacerlo.</h2>
+                                <p>El sector asegurador enfrenta fraudes patrimoniales de alta sofiticación técnica y digital.
+                                    La industria exige con urgencia una nueva élite de investigadores híbridos: profesionales que 
+                                    dominen tanto el marco legal y la ciencia forense, como el análisis de datos y la tecnología antifraude.
+                                </p>
+                                <div class="slide-decoracion">
+                                    <i class="fas fa-car-crash"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="slide-curso">
+                                <span class="slide-etiqueta">01 · OBJETIVO</span>
+                                <h2>¿Qué aprenderás?</h2>
+                                <p>Desarrollar una visión integral de la investigación moderna mediante la combinación de conocimientos 
+                                    jurídicos, criminalísticos, tecnológicos y financieros, fortaleciendo las competencias del 
+                                    investigador para analizar, prevenir, identificar y reconstruir hechos a través de herramientas 
+                                    científicas, digitales y especializadas.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="slide-curso">
+                                <span class="slide-etiqueta">02 · CONTENIDO</span>
+                                <h2>Temario</h2>
+                                <div class="slide-lista">
+                                    <div>
+                                        <i class="fas fa-check"></i>
+                                        Fundamentos jurídicos analíticos y financieros.
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-check"></i>
+                                        Derecho penal, auditoría de inventarios e informática investigativa.
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-check"></i>
+                                        Trabajo de campo físico, peritaje y criminalística dura.
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-check"></i>
+                                        IA antifraude, práctica forense real y titulación.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="slide-curso">
+                                <span class="slide-etiqueta">03 · PERFIL DE EGRESO Y CAMPO LABORAL</span>
+                                <strong>Perfil de egreso</strong>
+                                <ul class="lista">
+                                    <li>Capacidad absoluta para analizar contratos, pólizas y ejecutar procesos penales.</li>
+                                    <li>Detección implacable de sobreprecios, bienes existentes y anomalías financieras.</li>
+                                    <li>Dominio de la preservación de escenas, gafoscopía y reconstrucción de colisiones e incendios.</li>
+                                </ul>
+                                <strong>Campo laboral</strong>
+                                <ul class="lista">
+                                    <li>Compañias aseguradoras: áreas operativas de ajuste, prevención y validación técnica.</li>
+                                    <li>Despachos de ajuste de siniestros: trabajo de campo y dictaminación externa de procedencia.</li>
+                                    <li>Prevención de fraude corporativo: departamentos internos de protección patrimonial.</li>
+                                    <li>Firmas de auditoría forense: consultoría especializada de alto nivel.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="slide-curso slide-inscripcion">
+                                <span class="slide-etiqueta">04 · INSCRIPCIÓN</span>
+                                <h2>Forma parte de esta experiencia</h2>
+                                <p>Consulta las fechas, costos, modalidad,
+                                    sede y requisitos para participar.
+                                </p>
+                                <h3>Inscripciones abiertas</h3>
+                                <p>Solicita información sobre el técnico superior
+                                    y conoce todos los detalles. ¡Da clic <a href="https://forms.gle/JBfpu8GN7vLi186s5" target="_blank">aquí</a>!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselCursoInfo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselCursoInfo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+
+                    <div class="indicadores-curso">
+                        <button type="button" data-bs-target="#carruselCursoInfo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carruselCursoInfo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carruselCursoInfo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carruselCursoInfo" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carruselCursoInfo" data-bs-slide-to="4"></button>
+                    </div>
+                </div>
+
+                <div class="pie-presentacion">
+                    <span>Explora la información del diplomado</span>
+                    <button type="button" data-bs-dismiss="modal">
+                        Cerrar presentación
                     </button>
                 </div>
             </div>
